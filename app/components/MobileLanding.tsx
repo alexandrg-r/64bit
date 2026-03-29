@@ -73,9 +73,9 @@ export default function MobileLanding() {
           </div>
           {/* Buttons */}
           <div className="flex gap-[12px] items-center shrink-0">
-            <button className="flex h-[40px] items-center justify-center px-[16px] py-[8px] rounded-[10px]">
-              <span className="font-sans text-[#a4a9c6] text-[14px] leading-[20px]">Sign In</span>
-            </button>
+            {/*<button className="flex h-[40px] items-center justify-center px-[16px] py-[8px] rounded-[10px]">*/}
+            {/*  <span className="font-sans text-[#a4a9c6] text-[14px] leading-[20px]">Sign In</span>*/}
+            {/*</button>*/}
             <button className="relative flex h-[40px] items-center justify-center px-[24px] py-[8px] rounded-[12px] overflow-hidden shadow-[0px_0px_30px_0px_rgba(126,71,235,0.4),0px_0px_80px_0px_rgba(126,71,235,0.15)]">
               <div
                 aria-hidden="true"
