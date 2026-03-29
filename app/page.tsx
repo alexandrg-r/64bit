@@ -34,6 +34,8 @@ const imgSvg10 = "https://www.figma.com/api/mcp/asset/5b386bbf-234d-481b-9d3f-e0
 const imgSvg11 = "https://www.figma.com/api/mcp/asset/5ffd7655-f616-4dad-a403-7f62172d8a81";
 const imgSvg12 = "https://www.figma.com/api/mcp/asset/0b3a060a-7e57-403c-9408-5c32ad999469";
 
+const heroBackgroundVideoSrc = "/videos/landing-hero.mp4";
+
 // ─── Shared helpers ──────────────────────────────────────────────────────────
 function FireIcon({ className }: { className?: string }) {
   return (
@@ -148,44 +150,23 @@ export default function Landing() {
 
           {/* Hero Section */}
           <div className="content-stretch flex h-[850px] items-center justify-between overflow-clip pt-[60px] relative shrink-0 w-full">
+            <video
+              aria-hidden="true"
+              autoPlay
+              className="absolute inset-0 h-full w-full object-cover pointer-events-none"
+              loop
+              muted
+              playsInline
+              preload="auto"
+            >
+              <source src={heroBackgroundVideoSrc} type="video/mp4" />
+            </video>
             <div
-              className="absolute blur-[47px] inset-[-0.26px_0_-75px_0]"
-              style={{ backgroundImage: "url('data:image/svg+xml;utf8,<svg viewBox=\\'0 0 1440 925.26\\' xmlns=\\'http://www.w3.org/2000/svg\\' preserveAspectRatio=\\'none\\'><rect x=\\'0\\' y=\\'0\\' height=\\'100%\\' width=\\'100%\\' fill=\\'url(%23grad)\\' opacity=\\'0.30000001192092896\\'/><defs><radialGradient id=\\'grad\\' gradientUnits=\\'userSpaceOnUse\\' cx=\\'0\\' cy=\\'0\\' r=\\'10\\' gradientTransform=\\'matrix(113.5 -4.8562e-7 1.1581e-7 45.58 737.01 -0.0000031534)\\'><stop stop-color=\\'rgba(59,118,237,0.12)\\' offset=\\'0\\'/><stop stop-color=\\'rgba(59,89,237,0)\\' offset=\\'1\\'/></radialGradient></defs></svg>')" }}
+              aria-hidden="true"
+              className="absolute inset-0 bg-[#080b14]/65 pointer-events-none"
             />
-
-            {/* Left game thumbnails */}
-            <div className="h-[956px] overflow-clip relative shrink-0 w-[331px]">
-              <div className="absolute bottom-[60px] flex h-[955.567px] items-center justify-center left-[-364px] w-[695.07px]">
-                <div className="-scale-y-99 flex-none rotate-180 skew-x-[-6.63deg]">
-                  <div className="h-[962px] overflow-clip relative w-[584px]">
-                    <div className="absolute h-[203px] left-[151px] rounded-[12px] top-[446px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle50} /></div>
-                    <div className="absolute h-[203px] left-0 rounded-[14px] top-[506px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[14px] size-full" src={imgRectangle51} /></div>
-                    <div className="absolute h-[203px] left-[302px] rounded-[12px] top-[536px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle52} /></div>
-                    <div className="absolute h-[203px] left-[453px] rounded-[12px] top-[486px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle53} /></div>
-                    <div className="absolute h-[203px] left-[151px] rounded-[12px] top-[669px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle53} /></div>
-                    <div className="absolute h-[203px] left-0 rounded-[12px] top-[729px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle55} /></div>
-                    <div className="absolute h-[203px] left-[302px] rounded-[12px] top-[759px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle56} /></div>
-                    <div className="absolute h-[203px] left-[453px] rounded-[12px] top-[709px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle52} /></div>
-                    <div className="absolute h-[203px] left-[151px] rounded-[14px] top-[223px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[14px] size-full" src={imgRectangle58} /></div>
-                    <div className="absolute h-[203px] left-0 rounded-[14px] top-[283px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[14px] size-full" src={imgRectangle59} /></div>
-                    <div className="absolute h-[203px] left-[302px] rounded-[12px] top-[313px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle55} /></div>
-                    <div className="absolute h-[203px] left-[453px] rounded-[12px] top-[263px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle50} /></div>
-                    <div className="absolute h-[203px] left-[151px] rounded-[12px] top-0 w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle50} /></div>
-                    <div className="absolute h-[203px] left-0 rounded-[12px] top-[60px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle56} /></div>
-                    <div className="absolute h-[203px] left-[302px] rounded-[12px] top-[90px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle64} /></div>
-                    <div className="absolute h-[203px] left-[453px] rounded-[12px] top-[40px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle65} /></div>
-                    <div className="absolute flex h-[755.462px] items-center justify-center left-[-108.82px] top-[247.01px] w-[769.595px]">
-                      <div className="flex-none scale-y-101 skew-x-[-6.59deg]">
-                        <div className="h-[750.409px] w-[682.371px]" style={{ backgroundImage: "linear-gradient(179.4777338447061deg, rgba(11, 13, 20, 0) 0.41707%, rgb(11, 13, 20) 99.608%)" }} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Hero center content */}
-            <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-center justify-between min-h-px min-w-px pb-[40px] pt-[150px] relative">
+            <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-center justify-between min-h-px min-w-px pb-[40px] pt-[150px] relative z-10">
               <div className="content-stretch flex flex-col gap-[48px] items-center relative shrink-0 w-full">
                 <div className="content-stretch flex flex-col gap-[30px] items-center relative shrink-0 w-full">
                   <div className="flex flex-col font-orbitron font-black justify-center leading-[0] relative shrink-0 text-[0px] text-center text-white w-full">
@@ -229,36 +210,6 @@ export default function Landing() {
               </div>
             </div>
 
-            {/* Right game thumbnails */}
-            <div className="h-[956px] overflow-clip relative shrink-0 w-[331px]">
-              <div className="absolute bottom-[90px] flex h-[955.567px] items-center justify-center left-0 w-[695.07px]">
-                <div className="-scale-y-99 flex-none rotate-180 skew-x-[-6.63deg]">
-                  <div className="h-[962px] overflow-clip relative w-[584px]">
-                    <div className="absolute h-[203px] left-[151px] rounded-[12px] top-[446px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle50} /></div>
-                    <div className="absolute h-[203px] left-0 rounded-[14px] top-[506px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[14px] size-full" src={imgRectangle51} /></div>
-                    <div className="absolute h-[203px] left-[302px] rounded-[12px] top-[536px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle52} /></div>
-                    <div className="absolute h-[203px] left-[453px] rounded-[12px] top-[486px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle53} /></div>
-                    <div className="absolute h-[203px] left-[151px] rounded-[12px] top-[669px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle53} /></div>
-                    <div className="absolute h-[203px] left-0 rounded-[12px] top-[729px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle55} /></div>
-                    <div className="absolute h-[203px] left-[302px] rounded-[12px] top-[759px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle56} /></div>
-                    <div className="absolute h-[203px] left-[453px] rounded-[12px] top-[709px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle52} /></div>
-                    <div className="absolute h-[203px] left-[151px] rounded-[14px] top-[223px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[14px] size-full" src={imgRectangle58} /></div>
-                    <div className="absolute h-[203px] left-0 rounded-[14px] top-[283px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[14px] size-full" src={imgRectangle59} /></div>
-                    <div className="absolute h-[203px] left-[302px] rounded-[12px] top-[313px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle55} /></div>
-                    <div className="absolute h-[203px] left-[453px] rounded-[12px] top-[263px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle50} /></div>
-                    <div className="absolute h-[203px] left-[151px] rounded-[12px] top-0 w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle50} /></div>
-                    <div className="absolute h-[203px] left-0 rounded-[12px] top-[60px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle56} /></div>
-                    <div className="absolute h-[203px] left-[302px] rounded-[12px] top-[90px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle64} /></div>
-                    <div className="absolute h-[203px] left-[453px] rounded-[12px] top-[40px] w-[131px]"><img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[12px] size-full" src={imgRectangle65} /></div>
-                    <div className="absolute flex h-[1018.382px] items-center justify-center left-[-110.65px] top-0 w-[805.724px]">
-                      <div className="flex-none scale-y-101 skew-x-[-6.59deg]">
-                        <div className="h-[1011.572px] w-[688.144px]" style={{ backgroundImage: "linear-gradient(179.3018929160729deg, rgba(11, 13, 20, 0) 0.41707%, rgb(11, 13, 20) 99.608%)" }} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Popular Games Section */}
