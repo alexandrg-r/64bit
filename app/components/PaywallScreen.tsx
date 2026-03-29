@@ -36,7 +36,7 @@ function PaywallFooter({ className }: { className?: string }) {
         "bg-[rgba(255,255,255,0.02)] content-stretch flex flex-col items-start p-6 sm:p-8 lg:p-[40px] relative w-full max-w-[1440px] mx-auto"
       }
     >
-      <div className="content-stretch flex flex-col gap-10 items-start justify-center lg:flex-row lg:gap-[40px] lg:items-start relative shrink-0 w-full">
+      <div className="lg:content-stretch lg:flex lg:flex-row lg:gap-[40px] lg:items-start lg:justify-center lg:relative lg:shrink-0 lg:w-full">
         <div className="content-stretch flex flex-[1_0_0] flex-col gap-8 items-start justify-between leading-[0] min-h-px min-w-px relative lg:self-stretch">
           <div className="flex flex-col font-orbitron justify-center not-italic relative shrink-0 text-[36px] sm:text-[42px] lg:text-[49.105px] text-white whitespace-nowrap">
             <p className="font-orbitron">
